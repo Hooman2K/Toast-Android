@@ -49,7 +49,7 @@ public class MyToast
     //set message to Toast
     public void setText(String message)
     {
-        if (view==null)
+        if (view == null)
         {
             return;
         }
@@ -59,7 +59,7 @@ public class MyToast
     //set icon to Toast
     public void setIcon(int iconId)
     {
-        if (view==null)
+        if (view == null)
         {
             return;
         }
@@ -78,7 +78,7 @@ public class MyToast
         MyToast toast = new MyToast(context);
         toast.setText(message);
         toast.getToast().setDuration(duration);
-        toast.getToast().setGravity(Gravity.CENTER | Gravity.BOTTOM, 0, 100);
+        toast.getToast().setGravity(Gravity.BOTTOM | Gravity.CENTER, 0, 100);
         toast.setIcon(ICON_ALERT);
         return toast.getToast();
     }
